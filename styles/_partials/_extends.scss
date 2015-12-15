@@ -1,0 +1,17 @@
+%ss-btn {
+	font-family: 'Open Sans';
+	padding: 1.5em;
+	border-radius: 30px;
+	border: none;
+	font-size: .9rem;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+	display: flex;
+	transition: .1s;
+	margin: 1em;
+
+	&:hover {
+		transform: scale(1.03);
+	}
+}

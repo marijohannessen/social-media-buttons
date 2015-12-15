@@ -1,0 +1,167 @@
+@mixin ss-btn($social-media) {
+	@if ($social-media == 'facebook') {
+		background-color: $facebook;
+		&:before {
+			content: '\e041';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'twitter') {
+		background-color: $twitter;
+		&:before {
+			content: '\e040';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'googleplus') {
+		background-color: $googleplus;
+		&:before {
+			content: '\e042';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'pinterest') {
+		background-color: $pinterest;
+		&:before {
+			content: '\e043';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'foursquare') {
+		background-color: $foursquare;
+		&:before {
+			content: '\e044';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'yahoo') {
+		background-color: $yahoo;
+		&:before {
+			content: '\e045';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'skype') {
+		background-color: $skype;
+		&:before {
+			content: '\e046';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'yelp') {
+		background-color: $yelp;
+		&:before {
+			content: '\e047';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'linkedin') {
+		background-color: $linkedin;
+		&:before {
+			content: '\e049';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'soundcloud') {
+		background-color: $soundcloud;
+		&:before {
+			content: '\e04d';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'spotify') {
+		background-color: $spotify;
+		&:before {
+			content: '\e04e';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'youtube') {
+		background-color: $youtube;
+		&:before {
+			content: '\e051';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'vine') {
+		background-color: $vine;
+		&:before {
+			content: '\e054';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'vimeo') {
+		background-color: $vimeo;
+		&:before {
+			content: '\e052';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'instagram') {
+		background-color: $instagram;
+		&:before {
+			content: '\e057';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'tumblr') {
+		background-color: $tumblr;
+		&:before {
+			content: '\e059';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'reddit') {
+		background-color: $reddit;
+		&:before {
+			content: '\e022';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'dribbble') {
+		background-color: $dribbble;
+		&:before {
+			content: '\e023';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'github') {
+		background-color: $github;
+		&:before {
+			content: '\e030';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+}
+
+@mixin ss-btn-light($social-media) {
+	@if ($social-media == 'facebook') {
+		border: 2px solid $facebook;
+		color: $facebook;
+		background-color: white;
+		&:before {
+			content: '\e041';
+			padding-right: .5em;
+			font-size: 1.3em;
+		}
+	}
+}
