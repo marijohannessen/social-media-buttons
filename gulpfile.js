@@ -9,7 +9,7 @@ browserSync = require('browser-sync').create();
  gulp.task('compileSass', function() {
   return gulp.src("source/social-share.scss")
       .pipe(sass())
-      .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('./source/'))
       .pipe(browserSync.stream());
 });
 
@@ -21,7 +21,11 @@ gulp.task('watchFiles', function() {
     }
   });
   gulp.watch("*.html").on('change', browserSync.reload);
-  gulp.watch('scss/**/*.scss', ['compileSass']);
+  gulp.watch('source/**/*.scss', ['compileSass']);
+});
+
+gulp.task("build", ['compileSass'], function() {
+  return gulp.src(["css/application.css"], { base: './' })
 });
 
 

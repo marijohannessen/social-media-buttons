@@ -40,8 +40,7 @@
 }
 
 body {
-	background-color: #ececec;
-	color: $color--text;
+	background-color: lighten(#06BEE1, 80);
 	font-family: 'socicon';
 }
 
@@ -51,23 +50,92 @@ body {
 	box-sizing: border-box;
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-
 .icons {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.header {
-	margin: 2em 0;
-	font-family: 'Lato';
-	padding-bottom: 2em;
-	border-bottom: 2px solid $color--text;
-	flex: 1;
+.container {
+  width: 100%;
+  padding: 0 2em;
 }
+
+.sidebar-nav {
+  width: 20%;
+  background-color: #032560;
+  font-family: 'Open Sans';
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  background-color: #fff;
+  font-family: 'Roboto';
+  padding: 2em;
+  margin-bottom: 2em;
+  color: #2C3D55;
+  border-bottom: 1px solid #2C3D55;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__heading {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: .2em;
+  }
+
+  &__subheading {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.nav {
+  display: flex;
+  font-family: 'Roboto';
+  list-style: none;
+  font-size: 12px;
+  padding: 1em 0;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  li {
+    padding-right: 2em;
+  }
+
+  a {
+    color: #2C3D55;
+    text-decoration: none;
+  }
+}
+
+.btns {
+  color: #2C3D55;
+  margin-top: 5em;
+
+  &__heading {
+    font-size: .8em;
+    padding: 1em 0;
+    margin-top: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__rounded {
+    font-family: 'Roboto';
+  }
+}
+
+.icons {
+  padding: 1em 0;
+}
+
+// ROUNDED
 
 .ss-btn-facebook {
 	@extend %ss-btn;
@@ -134,7 +202,226 @@ body {
 	@include ss-btn('vine');
 }
 
+.ss-btn-vimeo {
+  @extend %ss-btn;
+  @include ss-btn('vimeo');
+}
+
+.ss-btn-instagram {
+  @extend %ss-btn;
+  @include ss-btn('instagram');
+}
+
+.ss-btn-tumblr {
+  @extend %ss-btn;
+  @include ss-btn('tumblr');
+}
+
+.ss-btn-reddit {
+  @extend %ss-btn;
+  @include ss-btn('reddit');
+}
+
+.ss-btn-dribbble {
+  @extend %ss-btn;
+  @include ss-btn('dribbble');
+}
+
+.ss-btn-github {
+  @extend %ss-btn;
+  @include ss-btn('github');
+}
+
+// LIGHT
+
 .ss-btn-light-facebook {
-	@extend %ss-btn;
+	@extend %ss-btn-light;
 	@include ss-btn-light('facebook');
+}
+
+.ss-btn-light-twitter {
+  @extend %ss-btn-light;
+  @include ss-btn-light('twitter');
+}
+
+.ss-btn-light-googleplus {
+  @extend %ss-btn-light;
+  @include ss-btn-light('googleplus');
+}
+
+.ss-btn-light-pinterest {
+  @extend %ss-btn-light;
+  @include ss-btn-light('pinterest');
+}
+
+.ss-btn-light-foursquare {
+  @extend %ss-btn-light;
+  @include ss-btn-light('foursquare');
+}
+
+.ss-btn-light-yahoo {
+  @extend %ss-btn-light;
+  @include ss-btn-light('yahoo');
+}
+
+.ss-btn-light-skype {
+  @extend %ss-btn-light;
+  @include ss-btn-light('skype');
+}
+
+.ss-btn-light-yelp {
+  @extend %ss-btn-light;
+  @include ss-btn-light('yelp');
+}
+
+.ss-btn-light-linkedin {
+  @extend %ss-btn-light;
+  @include ss-btn-light('linkedin');
+}
+
+.ss-btn-light-soundcloud {
+  @extend %ss-btn-light;
+  @include ss-btn-light('soundcloud');
+}
+
+.ss-btn-light-spotify {
+  @extend %ss-btn-light;
+  @include ss-btn-light('spotify');
+}
+
+.ss-btn-light-youtube {
+  @extend %ss-btn-light;
+  @include ss-btn-light('youtube');
+}
+
+.ss-btn-light-vine {
+  @extend %ss-btn-light;
+  @include ss-btn-light('vine');
+}
+
+.ss-btn-light-vimeo {
+  @extend %ss-btn-light;
+  @include ss-btn-light('vimeo');
+}
+
+.ss-btn-light-instagram {
+  @extend %ss-btn-light;
+  @include ss-btn-light('instagram');
+}
+
+.ss-btn-light-tumblr {
+  @extend %ss-btn-light;
+  @include ss-btn-light('tumblr');
+}
+
+.ss-btn-light-reddit {
+  @extend %ss-btn-light;
+  @include ss-btn-light('reddit');
+}
+
+.ss-btn-light-dribbble {
+  @extend %ss-btn-light;
+  @include ss-btn-light('dribbble');
+}
+
+.ss-btn-light-github {
+  @extend %ss-btn-light;
+  @include ss-btn-light('github');
+}
+
+// ICONS ONLY
+
+.ss-btn-icon-facebook {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('facebook');
+}
+
+.ss-btn-icon-twitter {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('twitter');
+}
+
+.ss-btn-icon-googleplus {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('googleplus');
+}
+
+.ss-btn-icon-pinterest {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('pinterest');
+}
+
+.ss-btn-icon-foursquare {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('foursquare');
+}
+
+.ss-btn-icon-yahoo {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('yahoo');
+}
+
+.ss-btn-icon-skype {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('skype');
+}
+
+.ss-btn-icon-yelp {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('yelp');
+}
+
+.ss-btn-icon-linkedin {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('linkedin');
+}
+
+.ss-btn-icon-soundcloud {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('soundcloud');
+}
+
+.ss-btn-icon-spotify {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('spotify');
+}
+
+.ss-btn-icon-youtube {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('youtube');
+}
+
+.ss-btn-icon-vine {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('vine');
+}
+
+.ss-btn-icon-vimeo {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('vimeo');
+}
+
+.ss-btn-icon-instagram {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('instagram');
+}
+
+.ss-btn-icon-tumblr {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('tumblr');
+}
+
+.ss-btn-icon-reddit {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('reddit');
+}
+
+.ss-btn-icon-dribbble {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('dribbble');
+}
+
+.ss-btn-icon-github {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('github');
 }
