@@ -50,21 +50,9 @@ body {
 	box-sizing: border-box;
 }
 
-.icons {
+.buttons {
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.container {
-  width: 100%;
-  padding: 0 2em;
-}
-
-.sidebar-nav {
-  width: 20%;
-  background-color: #032560;
-  font-family: 'Open Sans';
-  position: fixed;
 }
 
 .header {
@@ -111,29 +99,88 @@ body {
   a {
     color: #2C3D55;
     text-decoration: none;
+
+    &:hover {
+      color: lighten(#2C3D55, 20);
+    }
   }
 }
 
-.btns {
+.container {
+  font-family: 'Roboto';
+  width: 95%;
+  margin-top: 3.5em;
+  padding: 0 2em;
   color: #2C3D55;
-  margin-top: 5em;
+}
+
+.section {
+  font-family: 'Roboto';
 
   &__heading {
-    font-size: 1em;
-    padding: 1em 0;
+    font-size: .9em;
+    padding: 2em 0;
     margin-top: 1em;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
-  &__rounded {
-    font-family: 'Roboto';
+  &__text {
+  }
+
+  ol {
+    margin-left: 1.3em;
+  }
+
+  ol li {
+    padding-bottom: 1em;
+    font-size: .9em;
   }
 }
 
-.icons {
-  padding: 1em 0;
+.highlight {
+    width: 45%;
+    margin-top: 1em;
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+    color: #333;
+    display: block;
 }
+
+.button-list {
+  margin-top: 1em;
+  list-style: none;
+  padding: .5em 0;
+
+  li {
+    padding: 1em 0;
+
+    a {
+      display: block;
+      font-size: 1.1em;
+      color: #2C3D55;
+      padding-bottom: .5em;
+    }
+
+    button {
+      margin-bottom: 2em;
+    }
+
+    code {
+      font-size: 1.1em;
+      padding: 0;
+    }
+
+    &:first-child {
+      padding-top: 1.5em;
+    }
+  }
+}
+
+
 
 // ROUNDED
 

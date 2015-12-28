@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Social Share Buttons</title>
@@ -10,32 +11,74 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 
-
-
-		<div class='header'>
-
-			<div class='headings'>
+	<!-- HEADER -->
+	<div class='header'>
+		<div class='headings'>
 			<h1 class='header__heading'>SOCIAL MEDIA BUTTONS</h1>
 			<h2 class='header__subheading'>A CSS library of easy customizable social media buttons.</h2>
-			</div>
-			<div class='navigation'>
+		</div>
+		<div class='navigation'>
 			<nav class='main-nav'>
 				<ul class='nav'>
 					<li><a href='#'>How to use</a></li>
 					<li><a href='#'>Types of buttons</a></li>
 				</ul>
 			</nav>
-			</div>
+		</div>
+	</div>
+
+	<!-- START OF CONTAINER -->
+	<div class='container'>
+
+		<!-- SECTION: HOW TO USE -->
+		<div class='section how-to-use'>
+
+			<h3 class='section__heading'>How to use</h3>
+
+			<p class='section__text'>
+				<ol>
+					<li>Download the <code>social-media-buttons.min.css</code> file and include it in your HTML file.
+					<figure class='highlight'>
+							<code data-lang='html'><span><</span><span>link href="social-media-buttons.min.css" rel="stylesheet"</span>></code>
+					</figure>
+					</li>
+					<li>
+						Add the associated class name to the button you want to style followed by the desired social network.
+							<ul class='button-list'>List of available button types:
+								<li><a href='#btns__rounded'>Rounded button</a>
+									<button class='ss-btn-facebook'>Follow us on Facebook</button>
+									<figure class='highlight'>
+											<code data-lang='html'><span><</span><span>button class="ss-btn-facebook</span>>Follow us on Facebook<<span>/button></span></code>
+									</figure>
+								</li>
+								<li><a href='#btns__rounded-light'>Rounded button - light</a>
+									<button class='ss-btn-light-facebook'>Follow us on Facebook</button>
+									<figure class='highlight'>
+											<code data-lang='html'><span><</span><span>button class="ss-btn-light-facebook</span>>Follow us on Facebook<<span>/button></span></code>
+									</figure>
+								</li>
+								<li><a href='#icons'>Icon</a>
+									<button class='ss-btn-icon-facebook'></button>
+									<figure class='highlight'>
+											<code data-lang='html'><span><</span><span>button class="ss-btn-icon-facebook</span>><<span>/button></span></code>
+									</figure>
+								</li>
+							</ul>
+					</li>
+				</ol>
+			</p>
+
 		</div>
 
-		<div class='container'>
+		<!-- BUTTONS ROUNDED -->
+		<div class='section btns btns__rounded' id='btns__rounded'>
 
-		<div class='btns btns__rounded'>
+			<h3 class='section__heading'>Rounded buttons</h3>
 
-			<h3 class='btns__heading'>Rounded buttons</h3>
-			<div class='icons'>
+			<div class='buttons'>
 
 				<button class='ss-btn-facebook'>Follow us</button>
 				<button class='ss-btn-twitter'>Follow us</button>
@@ -59,9 +102,14 @@
 
 			</div>
 
-			<h3 class='btns__heading'>Rounded buttons - light</h3>
+		</div>
 
-			<div class='icons'>
+		<!-- BUTTONS ROUNDED LIGHT -->
+		<div class='section btns btns__rounded-light' id='btns__rounded-light'>
+
+			<h3 class='section__heading'>Rounded buttons - light</h3>
+
+			<div class='buttons'>
 
 				<button class='ss-btn-light-facebook'>Follow us</button>
 				<button class='ss-btn-light-twitter'>Follow us</button>
@@ -85,9 +133,14 @@
 
 			</div>
 
-			<h3 class='btns__heading'>Icons only</h3>
+		</div>
 
-			<div class='icons'>
+		<!-- ICONS -->
+		<div class='section btns icons' id='icons'>
+
+			<h3 class='section__heading'>Icons only</h3>
+
+			<div class='buttons'>
 
 				<button class='ss-btn-icon-facebook'></button>
 				<button class='ss-btn-icon-twitter'></button>
