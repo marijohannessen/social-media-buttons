@@ -73,3 +73,7 @@ Add the following class to your button:
 - Airbnb
 - Paypal
 - Flickr
+
+## Contribute
+
+Notice anything not working properly? Missing a social media? Want to contribute? Please make an issue or fork the repo and make a pull request. 
