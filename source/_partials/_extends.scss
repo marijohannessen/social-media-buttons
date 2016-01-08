@@ -10,6 +10,7 @@
 	display: flex;
 	transition: .1s;
 	margin: 1em 1em 1em 0;
+	border: 2px solid transparent;
 
 	&:hover {
 		transform: scale(1.03);

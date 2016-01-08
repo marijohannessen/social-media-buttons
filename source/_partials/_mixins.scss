@@ -3,7 +3,7 @@
 		background-color: $facebook;
 		&:before {
 			content: '\e041';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -11,7 +11,7 @@
 		background-color: $twitter;
 		&:before {
 			content: '\e040';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -19,7 +19,7 @@
 		background-color: $googleplus;
 		&:before {
 			content: '\e042';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -27,7 +27,7 @@
 		background-color: $pinterest;
 		&:before {
 			content: '\e043';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -35,7 +35,7 @@
 		background-color: $foursquare;
 		&:before {
 			content: '\e044';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -43,7 +43,7 @@
 		background-color: $yahoo;
 		&:before {
 			content: '\e045';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -51,7 +51,7 @@
 		background-color: $skype;
 		&:before {
 			content: '\e046';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -59,7 +59,7 @@
 		background-color: $yelp;
 		&:before {
 			content: '\e047';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -67,7 +67,7 @@
 		background-color: $linkedin;
 		&:before {
 			content: '\e049';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -75,7 +75,7 @@
 		background-color: $soundcloud;
 		&:before {
 			content: '\e04d';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -83,7 +83,7 @@
 		background-color: $spotify;
 		&:before {
 			content: '\e04e';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -91,7 +91,7 @@
 		background-color: $youtube;
 		&:before {
 			content: '\e051';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -99,7 +99,7 @@
 		background-color: $vine;
 		&:before {
 			content: '\e054';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -107,7 +107,7 @@
 		background-color: $vimeo;
 		&:before {
 			content: '\e052';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -115,7 +115,7 @@
 		background-color: $instagram;
 		&:before {
 			content: '\e057';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -123,7 +123,7 @@
 		background-color: $tumblr;
 		&:before {
 			content: '\e059';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -131,7 +131,7 @@
 		background-color: $reddit;
 		&:before {
 			content: '\e022';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -139,7 +139,7 @@
 		background-color: $dribbble;
 		&:before {
 			content: '\e023';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -147,7 +147,47 @@
 		background-color: $github;
 		&:before {
 			content: '\e030';
-			padding-right: .5em;
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'twitch') {
+		background-color: $twitch;
+		&:before {
+			content: '\e05a';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'pocket') {
+		background-color: $pocket;
+		&:before {
+			content: '\e01e';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'airbnb') {
+		background-color: $airbnb;
+		&:before {
+			content: '\e00e';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'paypal') {
+		background-color: $paypal;
+		&:before {
+			content: '\e00c';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'flickr') {
+		background-color: $flickr;
+		&:before {
+			content: '\e055';
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -159,7 +199,7 @@
 		color: $facebook;
 		&:before {
 			content: '\e041';
-			padding-right: .5em;
+			padding-right: .8em;
 			font-size: 1.2em;
 		}
 	}
@@ -168,8 +208,8 @@
 		color: $twitter;
 		&:before {
 			content: '\e040';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'googleplus') {
@@ -177,8 +217,8 @@
 		color: $googleplus;
 		&:before {
 			content: '\e042';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'pinterest') {
@@ -186,8 +226,8 @@
 		color: $pinterest;
 		&:before {
 			content: '\e043';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'foursquare') {
@@ -195,8 +235,8 @@
 		color: $foursquare;
 		&:before {
 			content: '\e044';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'yahoo') {
@@ -204,8 +244,8 @@
 		color: $yahoo;
 		&:before {
 			content: '\e045';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'skype') {
@@ -213,8 +253,8 @@
 		color: $skype;
 		&:before {
 			content: '\e046';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'yelp') {
@@ -222,8 +262,8 @@
 		color: $yelp;
 		&:before {
 			content: '\e047';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'linkedin') {
@@ -231,8 +271,8 @@
 		color: $linkedin;
 		&:before {
 			content: '\e049';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'soundcloud') {
@@ -240,8 +280,8 @@
 		color: $soundcloud;
 		&:before {
 			content: '\e04d';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'spotify') {
@@ -249,8 +289,8 @@
 		color: $spotify;
 		&:before {
 			content: '\e04e';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'youtube') {
@@ -258,8 +298,8 @@
 		color: $youtube;
 		&:before {
 			content: '\e051';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'vine') {
@@ -267,8 +307,8 @@
 		color: $vine;
 		&:before {
 			content: '\e054';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'vimeo') {
@@ -276,8 +316,8 @@
 		color: $vimeo;
 		&:before {
 			content: '\e052';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'instagram') {
@@ -285,8 +325,8 @@
 		color: $instagram;
 		&:before {
 			content: '\e057';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'tumblr') {
@@ -294,8 +334,8 @@
 		color: $tumblr;
 		&:before {
 			content: '\e059';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'reddit') {
@@ -303,8 +343,8 @@
 		color: $reddit;
 		&:before {
 			content: '\e022';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'dribbble') {
@@ -312,8 +352,8 @@
 		color: $dribbble;
 		&:before {
 			content: '\e023';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 	@elseif ($social-media == 'github') {
@@ -321,8 +361,53 @@
 		color: $github;
 		&:before {
 			content: '\e030';
-			padding-right: .5em;
-			font-size: 1.3em;
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'twitch') {
+		border: 2px solid $twitch;
+		color: $twitch;
+		&:before {
+			content: '\e05a';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'pocket') {
+		border: 2px solid $pocket;
+		color: $pocket;
+		&:before {
+			content: '\e01e';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'airbnb') {
+		border: 2px solid $airbnb;
+		color: $airbnb;
+		&:before {
+			content: '\e00e';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'paypal') {
+		border: 2px solid $paypal;
+		color: $paypal;
+		&:before {
+			content: '\e00c';
+			padding-right: .8em;
+			font-size: 1.2em;
+		}
+	}
+	@elseif ($social-media == 'flickr') {
+		border: 2px solid $flickr;
+		color: $flickr;
+		&:before {
+			content: '\e055';
+			padding-right: .8em;
+			font-size: 1.2em;
 		}
 	}
 }
@@ -458,6 +543,41 @@
 		background-color: $github;
 		&:before {
 			content: '\e030';
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'twitch') {
+		background-color: $twitch;
+		&:before {
+			content: '\e05a';
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'pocket') {
+		background-color: $pocket;
+		&:before {
+			content: '\e01e';
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'airbnb') {
+		background-color: $airbnb;
+		&:before {
+			content: '\e00e';
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'paypal') {
+		background-color: $paypal;
+		&:before {
+			content: '\e00c';
+			font-size: 1.3em;
+		}
+	}
+	@elseif ($social-media == 'flickr') {
+		background-color: $flickr;
+		&:before {
+			content: '\e055';
 			font-size: 1.3em;
 		}
 	}

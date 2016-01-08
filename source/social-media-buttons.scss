@@ -2,17 +2,6 @@
 @import '_partials/mixins';
 @import '_partials/vars';
 
-@font-face {
-  font-family: "socicon";
-  src:url("fonts/socicon.eot");
-  src:url("fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("fonts/socicon.woff") format("woff"),
-    url("fonts/socicon.ttf") format("truetype"),
-    url("fonts/socicon.svg#socicon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 [data-icon]:before {
   font-family: "socicon" !important;
   content: attr(data-icon);
@@ -40,8 +29,10 @@
 }
 
 body {
-	background-color: lighten(#06BEE1, 80);
+	background-color: #f4f4f4;
 	font-family: 'socicon';
+  display: flex;
+  color: #2C3D55;
 }
 
 * {
@@ -51,95 +42,184 @@ body {
 }
 
 .buttons {
-	display: flex;
-	flex-flow: row wrap;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      padding-bottom: 1.5em;
+    }
+  }
 }
 
-.header {
+.sidebar {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  height: 4em;
+  font-family: 'Roboto';
   background-color: #fff;
-  font-family: 'Roboto';
-  padding: 2em;
-  margin-bottom: 2em;
-  color: #2C3D55;
-  border-bottom: 1px solid #2C3D55;
+  width: 16em;
+  height: 100%;
+  padding: 1em 1.5em;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  font-size: .9em;
+  border-right: 1px solid rgba(0,0,0,.2);
+  box-shadow: 3px 0px 16px -1px rgba(189,189,189,.8);
 
-  &__heading {
-    font-size: 14px;
+  h4 {
+    font-size: 1.1em;
+    padding-top: 1.6em;
+    padding-bottom: .5em;
+  }
+
+  ul {
+    padding-top: .5em;
+    list-style: none;
+  }
+
+  ul li {
+    padding: .6em 0;
+  }
+
+  ul li ul {
+    padding-top: .5em;
+    li {
+      padding: .7em 0;
+    }
+  }
+
+  .how-to-use {
+    font-size: .9em;
+  }
+
+  .line {
+    border-top: 1px solid lightgray;
+    margin-top: 1em;
+  }
+
+  .nonlink {
+    padding-top: 1.5em;
+    font-size: .9em;
     font-weight: 500;
-    padding-bottom: .2em;
   }
 
-  &__subheading {
-    font-size: 12px;
-    font-weight: 400;
+  .download {
+    font-size: .9em;
   }
-}
 
-.nav {
-  display: flex;
-  font-family: 'Roboto';
-  list-style: none;
-  font-size: 13px;
-  padding: 1em 0;
-  text-transform: uppercase;
-  font-weight: 500;
-
-  li {
-    padding-right: 2em;
+  .social-media-list {
+    font-size: .8em;
   }
 
   a {
-    color: #2C3D55;
+    color: #DD2D4A;
     text-decoration: none;
+    font-weight: 500;
+    letter-spacing: .4px;
 
     &:hover {
-      color: lighten(#2C3D55, 20);
+      text-decoration: underline;
     }
+  }
+
+  h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .7em;
+    opacity: .5;
   }
 }
 
 .container {
   font-family: 'Roboto';
-  width: 95%;
-  margin-top: 3.5em;
-  padding: 0 2em;
+  width: 100%;
   color: #2C3D55;
+  margin: 2em 2em 2em 17em;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+
+.header {
+  margin-left: 18%;
+  margin: 0;
+  padding: 2em;
+  display: block;
+  border-bottom: 1px solid lightgray;
+
+  &__buttons {
+    display: flex;
+    padding-top: .5em;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-top: .3em;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: 'Lato';
+    padding-top: 1.5em;
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &:first-child {
+      padding-top: .5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: darken(darkgray, 80);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    code {
+      padding: 0 .5em;
+    }
+  }
 }
 
 .section {
   font-family: 'Roboto';
+  padding-left: 2em;
+  padding-top: 2em;
+  border-bottom: 1px solid lightgray;
 
   &__heading {
-    font-size: .9em;
-    padding: 2em 0;
-    margin-top: 1em;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-size: 1em;
+    padding: .1em 0 1em;
+    font-weight: 400;
   }
 
-  &__text {
+  &__main-heading {
+    padding-bottom: .5em;
   }
 
-  ol {
-    margin-left: 1.3em;
-  }
-
-  ol li {
-    padding-bottom: 1em;
-    font-size: .9em;
+  .buttons {
+    width: 100%;
+    padding: 0 1.5em 2em 0;
   }
 }
 
 .highlight {
-    width: 45%;
+    width: 54%;
     margin-top: 1em;
     padding: 9px 14px;
     margin-bottom: 14px;
@@ -148,6 +228,20 @@ body {
     border-radius: 4px;
     color: #333;
     display: block;
+
+    &--small {
+      width: 90%;
+      margin-top: .2em;
+      padding: 9px 14px;
+      margin-bottom: 1em;
+      background-color: #f7f7f9;
+      border: 1px solid #e1e1e8;
+      border-radius: 4px;
+      color: #333;
+      display: block;
+      text-align: center;
+      font-size: .9em;
+    }
 }
 
 .button-list {
@@ -279,6 +373,31 @@ body {
   @include ss-btn('github');
 }
 
+.ss-btn-twitch {
+  @extend %ss-btn;
+  @include ss-btn('twitch');
+}
+
+.ss-btn-pocket {
+  @extend %ss-btn;
+  @include ss-btn('pocket');
+}
+
+.ss-btn-airbnb {
+  @extend %ss-btn;
+  @include ss-btn('airbnb');
+}
+
+.ss-btn-paypal {
+  @extend %ss-btn;
+  @include ss-btn('paypal');
+}
+
+.ss-btn-flickr {
+  @extend %ss-btn;
+  @include ss-btn('flickr');
+}
+
 // LIGHT
 
 .ss-btn-light-facebook {
@@ -376,6 +495,31 @@ body {
   @include ss-btn-light('github');
 }
 
+.ss-btn-light-twitch {
+  @extend %ss-btn-light;
+  @include ss-btn-light('twitch');
+}
+
+.ss-btn-light-pocket {
+  @extend %ss-btn-light;
+  @include ss-btn-light('pocket');
+}
+
+.ss-btn-light-airbnb {
+  @extend %ss-btn-light;
+  @include ss-btn-light('airbnb');
+}
+
+.ss-btn-light-paypal {
+  @extend %ss-btn-light;
+  @include ss-btn-light('paypal');
+}
+
+.ss-btn-light-flickr {
+  @extend %ss-btn-light;
+  @include ss-btn-light('flickr');
+}
+
 // ICONS ONLY
 
 .ss-btn-icon-facebook {
@@ -471,4 +615,29 @@ body {
 .ss-btn-icon-github {
   @extend %ss-btn-icon;
   @include ss-btn-icon('github');
+}
+
+.ss-btn-icon-twitch {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('twitch');
+}
+
+.ss-btn-icon-pocket {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('pocket');
+}
+
+.ss-btn-icon-airbnb {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('airbnb');
+}
+
+.ss-btn-icon-paypal {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('paypal');
+}
+
+.ss-btn-icon-flickr {
+  @extend %ss-btn-icon;
+  @include ss-btn-icon('flickr');
 }
