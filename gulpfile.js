@@ -7,7 +7,7 @@ var    gulp = require('gulp'),
 browserSync = require('browser-sync').create();
 
  gulp.task('compileSass', function() {
-  return gulp.src("source/social-share.scss")
+  return gulp.src("source/social-media-buttons.scss")
       .pipe(sass())
       .pipe(gulp.dest('./source/'))
       .pipe(browserSync.stream());
