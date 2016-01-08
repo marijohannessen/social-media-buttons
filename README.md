@@ -28,8 +28,6 @@ Add the following class to your button:
 
 ```<button class="ss-btn-vine">Add your text here</button>```
 
-<button class="ss-btn-vine">Add your text here</button>
-
 ### Light rounded buttons
 
 Add the following class to your button:
