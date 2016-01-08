@@ -4,7 +4,6 @@ A CSS library of easy customizable social media buttons.
 1. [Usage](#usage)
 2. [Types of Buttons](#buttons)
 3. [Available Social Media](#social-media)
-4. [Contribute](#contribute)
 
 ## <a id="usage"></a>Usage
 
@@ -74,5 +73,3 @@ Add the following class to your button:
 - Airbnb
 - Paypal
 - Flickr
-
-## <a id="contribute"></a>Contribute
