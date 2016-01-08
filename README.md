@@ -7,7 +7,7 @@ A CSS library of easy customizable social media buttons.
 
 ## <a id="usage"></a>Usage
 
-* Get started by downloading the [social-media-buttons.css](https://www.dropbox.com/s/rz2llb77t80al32/social-media-buttons.zip?dl=1) file, and include the stylesheet on your website.
+* Get started by downloading the [social-media-buttons.css](https://raw.githubusercontent.com/marijohannessen/social-media-buttons/master/source/social-media-buttons.css) (right-click to Save As..) file, and include the stylesheet on your website.
 
 ```<link href="social-media-buttons.css" rel="stylesheet">```
 
@@ -76,4 +76,4 @@ Add the following class to your button:
 
 ## Contribute
 
-Notice anything not working properly? Missing a social media? Want to contribute? Please make an issue or fork the repo and make a pull request. 
+Notice anything not working properly? Missing a social media? Want to contribute? Please make an issue or fork the repo and make a pull request.
