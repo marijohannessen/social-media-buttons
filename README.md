@@ -26,7 +26,8 @@ A CSS library of easy customizable social media buttons.
 
 Add the following class to your button:
 
-```<button class="ss-btn-vine">Add your text here</button>```
+```html <button class="ss-btn-vine">Add your text here</button>```
+
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-button.png" width="200px" />
 
 ### Light rounded buttons
@@ -34,6 +35,7 @@ Add the following class to your button:
 Add the following class to your button:
 
 ```<button class="ss-btn-light-vine">Add your text here</button>```
+
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-light.png" width="200px" />
 
 ### Icons only
@@ -41,7 +43,8 @@ Add the following class to your button:
 Add the following class to your button:
 
 ```<button class="ss-btn-icon-vine"></button>```
-<img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-icon.png" width="200px" />
+
+<img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-icon.png" width="75px" />
 
 [Full demo and list of buttons can be found here](http://marijohannessen.github.io/social-media-buttons/)
 
