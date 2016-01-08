@@ -17,15 +17,27 @@ Add the corresponding classname to style your button. The correct icon and color
 
 ```<button class="ss-btn-twitter">Follow me on Twitter</button>```
 
-<img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/twitter-button.png" width="150px" />
+<img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/twitter-button.png" width="200px" />
 
 ## <a id="buttons"></a>Types of Buttons
 
 ### Rounded buttons
 
+Add the following class to your button:
+
+```<button class="ss-btn-vine">Add your text here</button>```
+
 ### Light rounded buttons
 
+Add the following class to your button:
+
+```<button class="ss-btn-light-vine">Add your text here</button>```
+
 ### Icons only
+
+Add the following class to your button:
+
+```<button class="ss-btn-icon-vine">Add your text here</button>```
 
 ## <a id="social-media"></a>Available social media
 
