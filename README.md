@@ -43,6 +43,8 @@ Add the following class to your button:
 
 ```<button class="ss-btn-icon-vine"></button>```
 
+NB! In order for it to appear as an icon, do not type anything in between the <button> tags.
+
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-icon.png" width="75px" />
 
 [Full demo and list of buttons can be found here](http://marijohannessen.github.io/social-media-buttons/)
@@ -76,4 +78,6 @@ Add the following class to your button:
 
 ## Contribute
 
-Notice anything not working properly? Missing a social media? Want to contribute? Please make an issue or fork the repo and make a pull request.
+Notice anything not working properly? Missing a social media? Want to contribute?
+
+Please make an issue or fork the repo and make a pull request.
