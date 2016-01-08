@@ -1,5 +1,5 @@
 %ss-btn {
-	font-family: 'Open Sans';
+	font-family: 'Helvetica', sans-serif;
 	padding: 1.5em 2em 1.5em 1.8em;
 	border-radius: 30px;
 	border: none;
@@ -8,6 +8,7 @@
 	font-weight: 600;
 	cursor: pointer;
 	display: flex;
+	height: 57px;
 	transition: .1s;
 	margin: 1em 1em 1em 0;
 	border: 2px solid transparent;
