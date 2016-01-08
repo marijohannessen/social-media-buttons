@@ -12,14 +12,13 @@ A CSS library of easy customizable social media buttons.
 
 ```<link href="social-media-buttons.css" rel="stylesheet">```
 
-2.
-Add the corresponding classname to style your button. The correct icon and color will be added automatically. Example:
+2. Add the corresponding classname to style your button. The correct icon and color will be added automatically. Example:
 
 ```<button class="ss-btn-twitter">Follow me on Twitter</button>```
 
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/twitter-button.png" width="200px" />
 
-[View Demo and all buttons here](http://marijohannessen.github.io/social-media-buttons/)
+[View demo and all buttons here](http://marijohannessen.github.io/social-media-buttons/)
 
 ## <a id="buttons"></a>Types of Buttons
 
