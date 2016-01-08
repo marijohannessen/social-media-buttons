@@ -17,7 +17,7 @@ Add the corresponding classname to style your button. The correct icon and color
 
 ```<button class="ss-btn-twitter">Follow me on Twitter</button>```
 
-![Twitter button](https://github.com/marijohannessen/social-media-buttons/blob/master/images/twitter-button.png)
+<img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/twitter-button.png" width="150px" />
 
 ## <a id="buttons"></a>Types of Buttons
 
