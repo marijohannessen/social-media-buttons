@@ -26,7 +26,7 @@ A CSS library of easy customizable social media buttons.
 
 Add the following class to your button:
 
-```html <button class="ss-btn-vine">Add your text here</button>```
+```<button class="ss-btn-vine">Add your text here</button>```
 
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-button.png" width="200px" />
 
