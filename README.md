@@ -17,6 +17,8 @@ Add the corresponding classname to style your button. The correct icon and color
 
 ```<button class="ss-btn-twitter">Follow me on Twitter</button>```
 
+![Twitter button]()
+
 ## Browser Support
 ## <a id="buttons"></a>Types of Buttons
 ### Rounded buttons
