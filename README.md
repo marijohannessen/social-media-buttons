@@ -20,6 +20,7 @@ A CSS library of easy customizable social media buttons.
 [View demo and all buttons here](http://marijohannessen.github.io/social-media-buttons/)
 
 ## <a id="buttons"></a>Types of Buttons
+The buttons here are shown as screenshots, check out the [demo](http://marijohannessen.github.io/social-media-buttons/) to see hover effects, etc.
 
 ### Rounded buttons
 
@@ -43,7 +44,7 @@ Add the following class to your button:
 
 ```<button class="ss-btn-icon-vine"></button>```
 
-NB! In order for it to appear as an icon, do not type anything in between the <button> tags.
+NB! In order for it to appear as an icon, do not type anything in between the ```<button>``` button tags.
 
 <img src="https://github.com/marijohannessen/social-media-buttons/blob/master/images/vine-icon.png" width="75px" />
 
